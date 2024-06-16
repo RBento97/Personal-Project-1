@@ -17,6 +17,7 @@ public class MainMenu {
     int rows;
 
     Rectangle grid;
+    Rectangle startButton;
     Picture background;
 
     Picture ground;
@@ -39,6 +40,13 @@ public class MainMenu {
         grid.setColor(Color.BLACK);
         grid.fill();
 
+        startButton = new Rectangle(150, 200, 200,50 );
+        startButton.draw();
+        startButton.setColor(Color.YELLOW);
+        startButton.fill();
+
+
+
         /*
         background = new Picture(PADDING, PADDING, "bg_1600.png");
         background.draw();
@@ -50,5 +58,7 @@ public class MainMenu {
         clouds.draw();
 */
     }
+
+
 }
 
